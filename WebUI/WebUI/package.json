@@ -46,8 +46,7 @@
     "webpack-merge": "^3.0.0"
   },
   "-vs-binding": {
-    "AfterBuild": [
-      "webpack"
-    ]
+    "AfterBuild": [ "webpack" ],
+    "ProjectOpened": [ "install" ]
   }
 }
