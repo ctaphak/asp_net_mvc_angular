@@ -1,0 +1,28 @@
+{
+  "name": "revers-proxy",
+  "version": "0.0.0",
+  "description": "ReversProxy",
+  "main": "app.js",
+  "author": {
+    "name": "alexp"
+  },
+  "scripts": {
+    "webpack": "node node_modules/webpack/bin/webpack --config webpack.config.js",
+    "webpack-prod": "node node_modules/webpack/bin/webpack --config webpack.config.js --env.prod"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.12",
+    "awesome-typescript-loader": "^3.1.2",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.2",
+    "webpack-merge": "^4.1.0"
+  },
+  "-vs-binding": {
+    "AfterBuild": [
+      "webpack"
+    ],
+    "ProjectOpened": [
+      "install"
+    ]
+  }
+}
